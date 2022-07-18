@@ -1,0 +1,19 @@
+export interface Root {
+  fields: Field[]
+}
+
+export interface Field {
+  label: string
+  key: string
+  isRequired?: boolean
+  order: number
+  isReadonly: boolean
+  type: string
+  items?: Item[]
+  unit?: string
+}
+
+export interface Item {
+  value: string
+  text: string
+}
